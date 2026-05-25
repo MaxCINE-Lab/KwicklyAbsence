@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport"
+content="width=device-width">
+
+<title>
+
+Kwuickly Absence
+
+</title>
+
+<link
+rel="stylesheet"
+href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- 登录 -->
+
+<div id="login">
+
+<div class="login-card">
+
+<img
+src="logo.png"
+class="login-logo">
+
+<h1>
+
+Access
+
+</h1>
+
+<input
+id="user"
+placeholder="Username">
+
+<input
+id="pass"
+type="password"
+placeholder="Password">
+
+<button
+onclick="login()">
+
+Enter
+
+</button>
+
+<p id="err"></p>
+
+</div>
+
+</div>
+
+<!-- 主页面 -->
+
+<div id="app">
+
+<div class="nav">
+
+<img
+src="logo.png"
+class="logo">
+
+</div>
+
+<div class="title">
+
+Kwuickly Absence
+
+</div>
+
+<div class="sub">
+
+Absence QR Predictor
+
+</div>
+
+<div class="card">
+
+<input
+id="url"
+placeholder="Input URL">
+
+<input
+id="current"
+placeholder="Current Time">
+
+<input
+id="target"
+placeholder="Predict To">
+
+<div class="row">
+
+<button
+onclick="predict()">
+
+Predict
+
+</button>
+
+<button
+onclick="stop()">
+
+Stop
+
+</button>
+
+</div>
+
+</div>
+
+<div
+id="result">
+</div>
+
+<div
+id="qrcode">
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
